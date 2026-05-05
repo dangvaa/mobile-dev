@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="100dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/brand_pink"
+            android:gravity="center"
+            android:text="Добавить"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Название" android:textStyle="bold" android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent" android:layout_height="45dp"
+                android:background="@drawable/bg_input" android:paddingStart="10dp"
+                android:layout_marginBottom="15dp"/>
+
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Фото" android:textStyle="bold" android:layout_centerVertical="true"/>
+                <Button
+                    android:id="@+id/btn_load_photo"
+                    android:layout_width="wrap_content" android:layout_height="40dp"
+                    android:layout_alignParentEnd="true" android:text="Загрузить"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/input_gray" android:textColor="@color/black"/>
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/image_preview"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:scaleType="centerCrop"
+                android:background="@color/input_gray"
+                android:visibility="gone" />
+
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Ингредиенты" android:textStyle="bold" android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/input_ingredients"
+                android:layout_width="match_parent" android:layout_height="100dp"
+                android:background="@drawable/bg_input" android:gravity="top"
+                android:padding="10dp" android:layout_marginBottom="15dp"/>
+
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Описание" android:textStyle="bold" android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/input_description"
+                android:layout_width="match_parent" android:layout_height="150dp"
+                android:background="@drawable/bg_input" android:gravity="top"
+                android:padding="10dp" android:layout_marginBottom="20dp"/>
+
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Сохранить рецепт"
+                android:backgroundTint="@color/brand_pink"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
